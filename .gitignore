@@ -1,0 +1,11 @@
+config/database.yml
+config/fulcrum.rb
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/
+.rvmrc
+.sass-cache/
+*.DS_Store
+config/deploy.rb
+*.swp
