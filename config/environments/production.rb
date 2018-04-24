@@ -1,3 +1,20 @@
+Skip to content
+Features
+Business
+Explore
+Marketplace
+Pricing
+This repository
+Search
+Sign in or Sign up
+81 1,512 375 fulcrum-agile/fulcrum
+ Code  Issues 39  Pull requests 13  Projects 0  Wiki  Insights
+fulcrum/config/environments/production.rb
+cbb5f62  on 16 Mar 2015
+@kaleworsley kaleworsley Run `rake rails:update`.
+@malclocke @dstockdale @komagata @kaleworsley @bradleypriest
+    
+81 lines (57 sloc)  3.17 KB
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -59,11 +76,8 @@ Rails.application.configure do
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
-config.action_mailer.raise_delivery_errors = true
 
-config.action_mailer.perform_deliveries = true
-
-I
+  config.action_mailer.default_url_options = { :host => config.fulcrum.app_host }
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
@@ -71,15 +85,13 @@ I
 
   # Send deprecation notices to registered listeners.
   config.active_support.deprecation = :notify
+
   # Disable automatic flushing of the log to improve performance.
   # config.autoflush_log = false
- 
+
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-
-  
-  
 end
