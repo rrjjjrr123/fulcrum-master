@@ -1,20 +1,4 @@
-Skip to content
-Features
-Business
-Explore
-Marketplace
-Pricing
-This repository
-Search
-Sign in or Sign up
-81 1,512 375 fulcrum-agile/fulcrum
- Code  Issues 39  Pull requests 13  Projects 0  Wiki  Insights
-fulcrum/config/environments/production.rb
-cbb5f62  on 16 Mar 2015
-@kaleworsley kaleworsley Run `rake rails:update`.
-@malclocke @dstockdale @komagata @kaleworsley @bradleypriest
-    
-81 lines (57 sloc)  3.17 KB
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
