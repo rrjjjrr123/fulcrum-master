@@ -18,14 +18,15 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_url_options = { :host => config.fulcrum.app_host }
   config.action_mailer.smtp_settings = {
-    address: "smtp.gmail.com",  
-    port: 587,
-    domain: "gmail.com",
-    authentication: "plain",
-    enable_starttls_auto: true,
-    user_name: 'ronak.jain2116@gmail.com',
-    password: 'admin123' 
-  }
+  address:              'smtp.gmail.com',
+  port:                 587,
+  domain:               'gmail.com',
+  user_name:            'YOUR_USERNAME@gmail.com',
+  password:             'YOUR_PASSWORD',
+  authentication:       'plain'
+  # enable_starttls_auto: true
+  # ^ ^ remove this option ^ ^
+}
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
