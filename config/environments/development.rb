@@ -23,8 +23,8 @@ Rails.application.configure do
     domain: "railscasts.com",
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: ENV["GMAIL_USERNAME"],
-    password: ENV["GMAIL_PASSWORD"] 
+    user_name: 'ronak.jain2116@gmail.com',
+    password: 'admin123' 
   }
 
   # Print deprecation notices to the Rails logger.
